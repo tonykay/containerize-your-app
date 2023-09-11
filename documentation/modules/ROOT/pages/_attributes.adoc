@@ -1,4 +1,7 @@
 :experimental:
-:source-highlighter: highlightjs
+:numbered:
+:lab_name: Containerize your Application
+
+
 include::include_vars.adoc[]
 
