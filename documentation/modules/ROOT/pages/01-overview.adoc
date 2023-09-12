@@ -25,11 +25,9 @@ Deploy mirrored terminal window:
 * Clicking the command code blocks inside the instructions will automatically push them into the terminal window.
 
 === Lab Access
-. You can access your lab environment as `{ssh_user}` with password `{ssh_password} with the following command.
-+
-[source,bash,role=execute]
-----
-{ssh_command}
-----
 
-. All steps of this lab are to be completed as the `{user}` user.
+. You can access your lab environment as `{ssh_user}` with password `{ssh_password}` with the following command.
++
+`{ssh_command}`
+
+. All steps of this lab are to be completed as the `{ssh_user}` user.
