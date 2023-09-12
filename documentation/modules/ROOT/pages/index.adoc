@@ -19,7 +19,7 @@ You are viewing a landing page called the *Dashboard*. The dashboard has the ins
 === Lab Access
 
 . You can access your lab environment as `{ssh_user}` with password `{ssh_password}` with the following command.
-+
+
 `{ssh_command}`
 
 . All steps of this lab are to be completed as the `{ssh_user}` user.
