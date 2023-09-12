@@ -1,0 +1,13 @@
+antora:
+  name: documentation
+  version: HEAD
+  dir: gh_pages
+  modules:
+    - name: index
+    - name: 01-rpm-native-container
+    - name: 02-github-sourced-container
+
+tabs:
+  - name: terminal
+    port: 8001
+    path: /wetty
