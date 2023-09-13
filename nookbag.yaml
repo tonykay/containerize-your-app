@@ -1,7 +1,6 @@
 antora:
-  name: documentation
-  version: HEAD
-  dir: gh_pages
+  name: template-tutorial
+  dir: gh-pages
   modules:
     - name: index
     - name: 01-rpm-native-container
