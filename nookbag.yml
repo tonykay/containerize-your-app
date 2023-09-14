@@ -8,5 +8,5 @@ antora:
 
 tabs:
   - name: terminal
-    #    port: 8001
+    port: 443
     path: /wetty
