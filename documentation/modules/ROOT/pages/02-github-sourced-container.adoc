@@ -14,7 +14,7 @@ In this lab, we will be using a different Red Hat Enterprise Linux version in my
 . Verify the host system release 
 
 +
-[source,bash,role=execute]
+[source,bash]
 ----
 cat /etc/redhat-release
 ----
@@ -24,7 +24,7 @@ NOTE: The `bastion` system is Red Hat Enterprise Linux 9, and when you built the
 . As we did previously in this lab, Use `buildah from` to pull down the Red Hat Enterprise Linux 8 UBI.
 
 +
-[source,bash,role=execute]
+[source,bash]
 ----
 buildah from registry.access.redhat.com/ubi8/ubi
 ----
@@ -39,7 +39,7 @@ The software you will install is a JavaScript-based game that runs on a web brow
 
 . Use `buildah run` and install Apache (`httpd`) into the `ubi-working-container-1` container. 
 +
-[source,bash,role=execute]
+[source,bash]
 ----
 buildah run ubi-working-container-1 -- dnf -y install httpd
 ----
@@ -52,7 +52,7 @@ This will start up any of the services that are enabled.
 . Enable the `httpd` service using `buildah run`
 
 +
-[source,bash,role=execute]
+[source,bash]
 ----
 buildah run ubi-working-container-1 -- systemctl enable httpd
 ----
@@ -65,13 +65,13 @@ A GitHub repository has already been synchronized to `/home/devops/clumsy-bird/`
 
 . Verify the repository is cloned inside the `/home/devops/` directory
 +
-[source,bash,role=execute]
+[source,bash]
 ----
 cd /home/devops/
 ----
 
 +
-[source,bash,role=execute]
+[source,bash]
 ----
 git clone https://github.com/ellisonleao/clumsy-bird
 ----
@@ -89,7 +89,7 @@ ls clumsy-bird
 
 . Now that you have verified the source materials exist, you will put the software inside of my container image using the `buildah copy` command.
 +
-[source,bash,role=execute]
+[source,bash]
 ----
 buildah copy ubi-working-container-1 clumsy-bird /var/www/html
 ----
@@ -101,7 +101,7 @@ In the previous section of this lab, you ran the game natively through interacti
 . Execute `buildah config` to specify a port and initialize the container. 
 
 +
-[source,bash,role=execute]
+[source,bash]
 ----
 buildah config --port 80 --cmd "/usr/sbin/init" ubi-working-container-1
 ----
@@ -112,28 +112,28 @@ NOTE: The command makes a configuration change to this container. I'm configurin
 
 . Now that we have a container in a working configured state, it is time to make that permanent by committing it to a container image called `clumsy-bird`
 +
-[source,bash,role=execute]
+[source,bash]
 ----
 buildah commit ubi-working-container-1 clumsy-bird
 ----
 
 . Verify that the image was created with `podman`
 +
-[source,bash,role=execute]
+[source,bash]
 ----
 podman images
 ----
 +
 . Run the container Now it's time to run the container. 
 +
-[source,bash,role=execute]
+[source,bash]
 ----
-podman run -d -p 8080:80 clumsy-bird
+podman run -d -p 8500:80 clumsy-bird
 ----
 
 == Verify Application
 
 Verify that the application is running by navigating to
 
-http://bastion.{guid}.example.opentlc.com:8080
+http://bastion.{guid}.example.opentlc.com:8500
 

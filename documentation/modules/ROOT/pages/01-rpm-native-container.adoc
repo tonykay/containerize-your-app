@@ -16,7 +16,7 @@ Using the "buildah from" command will download and meld the container image. Thi
 image from Red Hat's registry.
 
 +
-[source,bash,role=execute]
+[source,bash]
 ----
 buildah from registry.access.redhat.com/ubi9/ubi
 ----
@@ -40,7 +40,7 @@ the container image.  Lastly, you are providing the `yum` command to install a
 package that defines all of the repositories from EPEL, `epel-release-latest-9`.
 
 +
-[source,bash,role=execute]
+[source,bash]
 ----
 buildah run ubi-working-container -- yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 ----
@@ -49,7 +49,7 @@ buildah run ubi-working-container -- yum -y install https://dl.fedoraproject.org
 . You can verify that the above command did not install the RPM on the host system.
 
 +
-[source,bash,role=execute]
+[source,bash]
 ----
 rpm -q epel-release
 ----
@@ -67,7 +67,7 @@ another `yum install`, within the container, to install the target
 software: `moon-buggy`.
 
 +
-[source,bash,role=execute]
+[source,bash]
 ----
 buildah run ubi-working-container -- yum -y install moon-buggy
 ----
@@ -81,7 +81,7 @@ the `buildah` command to commit the working container to an image called:
 `moon-buggy`.
 
 +
-[source,bash,role=execute]
+[source,bash]
 ----
 buildah commit ubi-working-container moon-buggy
 ----
@@ -90,7 +90,7 @@ buildah commit ubi-working-container moon-buggy
 . The output of `podman image list` should confirm the image was created.
 
 +
-[source,bash,role=execute]
+[source,bash]
 ----
 podman image list
 ----
@@ -100,14 +100,14 @@ podman image list
 
 Now the software has been installed and a new container image created.  It is
 time to spawn a runtime of the container image and validate the software.  The
-software we are using is a commandline command.  
+software we are using is a command line command.  
 
 . When you `run` the container,
 it will be in interactive (`-it`) mode, based on the `moon-buggy` container
 image and the command run interactively will be `/usr/bin/moon-buggy`.
 
 +
-[source,bash,role=execute]
+[source,bash]
 ----
 podman run -it moon-buggy /usr/bin/moon-buggy
 ----
@@ -143,7 +143,7 @@ Alternatively, you can use `podman` to kill the running container from
 *Terminal 2*.
 
 +
-[source,bash,role=execute]
+[source,bash]
 ----
 podman kill $(podman ps | grep -v CONTAINER | cut -f1 -d" " )
 ----
