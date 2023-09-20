@@ -3,9 +3,10 @@
 :lab_name: Containerize your Application
 
 :guid: my-guid
-:ssh_user: devops
+:ssh_user: devops-tyrell
 :ssh_password: devops
 :ssh_command: ssh devops@bastion.{guid}.example.opentlc.com
+:my_home: Boulder
 
 
 include::include_vars.adoc[]
