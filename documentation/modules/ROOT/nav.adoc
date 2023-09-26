@@ -1,4 +1,8 @@
 
 * xref:01-rpm-native-container.adoc[1. RPM Native Container]
+** xref:01-rpm-native-container.adoc#repositories[Repositories]
+** xref:01-rpm-native-container.adoc#software[Software]
 
 * xref:02-github-sourced-container.adoc[2. GitHub Sourced Container]
+** xref:02-github-sourced-container.adoc#prerequisites[Install Prerequisites]
+** xref:02-github-sourced-container.adoc#container[Enable Container]

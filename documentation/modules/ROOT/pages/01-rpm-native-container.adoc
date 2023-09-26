@@ -21,6 +21,7 @@ image from Red Hat's registry.
 buildah from registry.access.redhat.com/ubi9/ubi
 ----
 
+[#repositories]
 == Installing Repositories
 In this lab, you are going to containerize a software package that is already
 packaged in RPM format and stored in the Extra Packages for Enterprise Linux
@@ -59,6 +60,7 @@ individual `.repo` files, you could use the `buildah copy` command to copy
 files from the host operating system into the container image.  You will see
 an example of using `buildah copy` later in this lab.
 
+[#software]
 == Installing Software
 
 
