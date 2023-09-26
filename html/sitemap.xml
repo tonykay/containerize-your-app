@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:3000/rhs-build-course/index.html/template-tutorial/01-rpm-native-container.html</loc>
+<lastmod>2023-09-26T20:22:50.513Z</lastmod>
+</url>
+<url>
+<loc>http://localhost:3000/rhs-build-course/index.html/template-tutorial/02-github-sourced-container.html</loc>
+<lastmod>2023-09-26T20:22:50.513Z</lastmod>
+</url>
+<url>
+<loc>http://localhost:3000/rhs-build-course/index.html/template-tutorial/include_vars.html</loc>
+<lastmod>2023-09-26T20:22:50.513Z</lastmod>
+</url>
+<url>
+<loc>http://localhost:3000/rhs-build-course/index.html/template-tutorial/index.html</loc>
+<lastmod>2023-09-26T20:22:50.513Z</lastmod>
+</url>
+</urlset>

@@ -1,6 +1,6 @@
 antora:
   name: template-tutorial
-  dir: gh-pages
+  dir: html
   modules:
     - name: index
       label: "Overview"

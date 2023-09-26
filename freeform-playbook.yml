@@ -9,7 +9,7 @@ site:
 content:
   sources:
     - url: ./
-      start_path: documentation
+      start_path: content
 asciidoc:
   attributes:
     title: Containerize your App
@@ -32,4 +32,4 @@ ui:
       contents: "static_files: [ .nojekyll ]"
 
 output:
-  dir: ./gh-pages
+  dir: ./html

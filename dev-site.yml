@@ -10,7 +10,7 @@ content:
   sources:
     - url: .
       branches: HEAD
-      start_path: documentation
+      start_path: content
 asciidoc:
   attributes:
     title: Containerize your App (Dev Mode)
@@ -23,4 +23,4 @@ ui:
     snapshot: true
   supplemental_files: ./supplemental-ui
 output:
-  dir: ./gh-pages
+  dir: ./html
