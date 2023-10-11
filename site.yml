@@ -9,27 +9,25 @@ site:
 content:
   sources:
     - url: ./
-      start_path: documentation
+      start_path: content
 
 asciidoc:
   attributes:
     release-version: master
     page-pagination: true
   extensions:
-    - ./lib/tab-block.js
-    - ./lib/remote-include-processor.js
+    - ./content/lib/tab-block.js
+    - ./content/lib/remote-include-processor.js
 
 ui:
   bundle:
-    # url: https://github.com/tonykay/demo-gpte-classroom-ui/raw/main/releases/download/v0.0.2/ui-bundle.zip
-    url: https://github.com/rhpds/nookbag-bundle/releases/download/v0.0.2/bundle.zip
-      #url: https://github.com/redhat-developer-demos/rhd-tutorial-ui/releases/download/v0.1.9/ui-bundle.zip
+    url: https://github.com/redhat-developer-demos/rhd-tutorial-ui/releases/download/v0.1.9/ui-bundle.zip
     snapshot: true
   supplemental_files:
-    - path: ./supplemental-ui
+    - path: ./content/supplemental-ui
     - path: .nojekyll
     - path: ui.yml
       contents: "static_files: [ .nojekyll ]"
 
 output:
-  dir: ./gh-pages
+  dir: ./www
