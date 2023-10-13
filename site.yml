@@ -11,9 +11,6 @@ content:
     - url: ./
       start_path: content
 
-# nav:
-#   - ./content/modules/ROOT/nav.adoc
-
 asciidoc:
   attributes:
     release-version: master
@@ -24,7 +21,7 @@ asciidoc:
 
 ui:
   bundle:
-    url: https://github.com/redhat-developer-demos/rhd-tutorial-ui/releases/download/v0.1.9/ui-bundle.zip
+    url: https://github.com/tonykay/demo-gpte-classroom-ui/raw/main/releases/download/v0.0.2/ui-bundle.zip
     snapshot: true
   supplemental_files:
     - path: ./content/supplemental-ui
