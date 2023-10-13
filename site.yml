@@ -4,7 +4,7 @@ runtime:
 site:
   title: Containerize your App
   url: https://redhat-scholars.github.io/course-template
-  start_page: template-tutorial::module-01.adoc
+  start_page: modules::module-01.adoc
 
 content:
   sources:

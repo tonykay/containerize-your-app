@@ -1,4 +1,4 @@
-name: template-tutorial
+name: modules
 version: master
 nav:
   - modules/ROOT/nav.adoc
