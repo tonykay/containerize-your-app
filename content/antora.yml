@@ -1,7 +1,8 @@
 name: template-tutorial
-title: Showroom Poc Demo
 version: master
 nav:
   - modules/ROOT/nav.adoc
 
-start_page: ROOT:index.adoc
+    # These top level vars preserved for reference and *appear to be redundant*
+    # title: Showroom Poc Demo
+    # start_page: ROOT:module-01.adoc

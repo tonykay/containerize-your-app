@@ -2,14 +2,17 @@ runtime:
   cache_dir: ./.cache/antora
 
 site:
-  title: Showroom Poc Demo
+  title: Containerize your App
   url: https://redhat-scholars.github.io/course-template
-  start_page: template-tutorial::index.adoc
+  start_page: template-tutorial::module-01.adoc
 
 content:
   sources:
     - url: ./
       start_path: content
+
+# nav:
+#   - ./content/modules/ROOT/nav.adoc
 
 asciidoc:
   attributes:
