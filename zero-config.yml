@@ -2,7 +2,7 @@ antora:
   name: modules
   dir: www
   modules:
-    - name: module-01
+    - name: index
       label: "Overview"
     - name: module-02
       label: "Building an Application with rpms"
